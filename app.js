@@ -8,3 +8,5 @@ app.use(routes)
 app.listen(3000, () => {
   console.info('App is running on http://localhost:3000')
 })
+
+module.exports = app

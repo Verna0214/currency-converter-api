@@ -1,8 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const currencyController = require('../controllers/currencyController')
 
-router.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
+router.get('/', currencyController.getCurrencies)
 module.exports = router
